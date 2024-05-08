@@ -60,3 +60,4 @@ $query = new WP_Query($args);
     <div class="button"><i class="fas fa-angle-left"></i></div>
     <div class="button"><i class="fas fa-angle-right"></i></div>
 </div>
+<div class="article-title-container"><h2 class="article-title"></h2></div>

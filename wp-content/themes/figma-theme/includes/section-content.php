@@ -63,7 +63,9 @@
                         <div class="item <?php echo $class; ?>">
                             <a href="<?php the_permalink(); ?>"><img src="<?php echo $image[0]; ?>"
                                     alt="<?php the_title(); ?>"></a>
+
                         </div>
+
                         <?php
                         $index++;
                     endwhile;
@@ -76,6 +78,8 @@
                     <div class="button"><i class="fas fa-angle-left"></i></div>
                     <div class="button"><i class="fas fa-angle-right"></i></div>
                 </div>
+                <div class="article-title-container"><h2 class="article-title"></h2></div>
+
             </div>
         </div>
     </div>

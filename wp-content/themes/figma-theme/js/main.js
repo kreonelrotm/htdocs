@@ -20,6 +20,7 @@ function initCarousel() {
     const slider = document.querySelector(".items");
     const slides = document.querySelectorAll(".item");
     const button = document.querySelectorAll(".button");
+    const title = document.querySelector(".article-title"); // Selectează elementul titlului
 
     let current = 0;
     let autoplayInterval;
@@ -45,6 +46,14 @@ function initCarousel() {
         slides[current].classList.add("active");
         slides[prev].classList.add("prev");
         slides[next].classList.add("next");
+
+        // Updatează titlul
+        updateTitle();
+    };
+
+    const updateTitle = () => {
+        // Setează titlul articolului curent în elementul .article-title
+        title.textContent = slides[current].querySelector("img").alt;
     };
 
     const startAutoplay = () => {
@@ -66,6 +75,7 @@ function initCarousel() {
         button[i].addEventListener("click", () => i == 0 ? gotoPrev() : gotoNext());
     }
 }
+
 
 const select = document.getElementById("select");
 

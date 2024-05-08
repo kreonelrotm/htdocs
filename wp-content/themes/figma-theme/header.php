@@ -59,8 +59,8 @@
                 unchanged.
             </div>
             <div class="buttons"> 
-                <button class="btn btn-primary">SECTION 1</button>
-                <button class="btn btn-primary">SECTION 2</button>
+                <a href="#section1"><button class="btn btn-primary">SECTION 1</button></a>
+                <a href="#section2"><button class="btn btn-primary">SECTION 2</button></a>
             </div>
 
 

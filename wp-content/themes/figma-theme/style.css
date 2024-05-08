@@ -279,6 +279,19 @@ select:hover:focus {
     transform: translate(-35%, -50%);
 }
 
+.items .article-title-container {
+    position: absolute;
+    bottom: -275px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .items .button-container {
     position: absolute;
     bottom: -270px;
@@ -385,6 +398,10 @@ footer {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
+}
+
+.article-title{
+    color: white;
 }
 
 @media (max-width: 720px) {
@@ -522,6 +539,11 @@ footer {
         transform: translate(-50%, 0);
         width: 275px;
         z-index: 100;
+    }
+
+    .items .article-title-container {
+        bottom: -190px;
+
     }
 
     .button-container .button {
